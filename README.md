@@ -1,7 +1,3 @@
-Here is a review and update of the README based on the listed project files, your work progress, and relevant details:  
-
----
-
 # DDoSWatch 🚨🌐  
 
 A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine learning and cloud infrastructure like **AWS** to detect and mitigate Distributed Denial of Service (DDoS) attacks.  
