@@ -151,13 +151,11 @@ We welcome contributions! Please follow these steps:
 
 ## 💡 Contributors  
 
-- **Parth Galhotra** (@ParthG26) - Lead Developer  
-- **Shaurya Srinet** - Traffic Simulation and AWS Integration  
-- **Charvi Jain** - Machine Learning Implementation and Documentation  
-- **Shounak Chandra** - IoT and Testing  
-
+- **Shaurya Srinet** (@footcricket05) - Lead Developer, **Traffic Simulation** and **AWS Integration**  
+- **Charvi Jain** (@charvijain12) - **Machine Learning** Implementation, **Agile Scrum** Developer, and Documentation  
+- **Shounak Chandra** (@Shounak2003) - **JMeter Configuration**, Testing, **Agile Scrum** Developer, and Documentation  
+ 
 ---
-
 
 ## License 📄  
 This project is licensed under the `GNU Affero General Public License v3.0`. See the LICENSE file for more details.
