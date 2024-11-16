@@ -148,10 +148,3 @@ We welcome contributions! Please follow these steps:
 
 ## License 📄  
 This project is licensed under the `GNU Affero General Public License v3.0`. See the LICENSE file for more details.
-
-
-## 🚨 Acknowledgments  
-
-- **AWS** for providing the cloud infrastructure.  
-- **Apache JMeter** for enabling realistic traffic simulation.  
-- **Isolation Forest Algorithm** for anomaly detection.  
