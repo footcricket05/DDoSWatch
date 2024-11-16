@@ -126,6 +126,11 @@ JMeter was used to simulate traffic, including potential DDoS scenarios, for tes
 
 ---
 
+Contributing 🤝
+We welcome contributions from the community! Feel free to fork this repository, create a feature branch, and submit a pull request. Your input is valuable in enhancing the robustness and effectiveness of DDoSWatch.
+
+---
+
 ## Contributors 💡  
 We had a strong, dedicated team contributing to the success of this project:  
 
