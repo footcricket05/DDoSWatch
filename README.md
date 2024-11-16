@@ -97,10 +97,6 @@ JMeter was used to simulate traffic, including potential DDoS scenarios, for tes
    - **Summary Report**: To capture response times and error rates.  
    - **Graphs**: For real-time traffic analysis.  
 
-### Files  
-If you created any specific JMeter test plan file (e.g., `.jmx`), ensure it’s documented and saved in the repository for reference.
-
----
 
 ## 📂 Key Files in the Project  
 
