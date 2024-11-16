@@ -16,7 +16,6 @@ A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine
 - [License](#license)  
 - [Acknowledgments](#acknowledgments)  
 
----
 
 ## 📄 Project Overview  
 
@@ -24,7 +23,6 @@ DDoSWatch is a **cloud-based DDoS protection system** that uses **Isolation Fore
 
 The system also includes traffic simulation using **Apache JMeter** to create realistic attack scenarios for evaluating its effectiveness.  
 
----
 
 ## 🔧 Features  
 
@@ -34,7 +32,6 @@ The system also includes traffic simulation using **Apache JMeter** to create re
 - **Scalable Architecture**: Built on AWS to handle traffic spikes during potential DDoS attacks.  
 - **Monitoring and Alerts**: Uses AWS CloudWatch for continuous monitoring and alerting.  
 
----
 
 ## 🛠️ Installation  
 
@@ -63,8 +60,6 @@ The system also includes traffic simulation using **Apache JMeter** to create re
    pip install -r requirements.txt  
    ```  
 
----
-
 ## 🖥️ Usage  
 
 Run the following scripts for each function:  
@@ -84,7 +79,6 @@ python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\
 
 - Generates simulated traffic data, saved as `traffic-data.csv` in the `scripts` folder.  
 
----
 
 ## 🔧 JMeter Configuration  
 
@@ -106,7 +100,6 @@ python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\
    - **Summary Report**: Captures key metrics like response times and error rates.  
    - **Graphs**: For visualizing traffic and attack patterns in real time.  
 
----
 
 ## 📂 Key Files  
 
@@ -119,7 +112,6 @@ python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\
 | `scripts/DDoS-Alarm-2024_11_15_19_30_00.csv`   | Alarm data generated during DDoS testing, summarizing anomalies.           |  
 | `View Results Tree.jmx`                        | JMeter configuration file for traffic simulation.                          |  
 
----
 
 ## 🏗️ Architecture  
 
@@ -135,7 +127,6 @@ python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\
    - Auto Scaling and Load Balancing ensure system resilience.  
    - CloudWatch monitors and logs all activity, triggering alarms for anomalies.  
 
----
 
 ## 🤝 Contributing  
 
@@ -147,7 +138,6 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature-name`).  
 5. Submit a pull request.  
 
----
 
 ## 💡 Contributors  
 
@@ -155,12 +145,10 @@ We welcome contributions! Please follow these steps:
 - **Charvi Jain** (@charvijain12) - **Machine Learning** Implementation, **Agile Scrum** Developer, and Documentation  
 - **Shounak Chandra** (@Shounak2003) - **JMeter Configuration**, Testing, **Agile Scrum** Developer, and Documentation  
  
----
 
 ## License 📄  
 This project is licensed under the `GNU Affero General Public License v3.0`. See the LICENSE file for more details.
 
----
 
 ## 🚨 Acknowledgments  
 
