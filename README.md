@@ -10,7 +10,6 @@ A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine
 - [Usage](#usage)  
 - [JMeter Configuration](#jmeter-configuration)  
 - [Key Files](#key-files)  
-- [Architecture](#architecture)  
 - [Contributing](#contributing)  
 - [Contributors](#contributors)  
 - [License](#license)  
@@ -111,21 +110,6 @@ python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\
 | `scripts/generate_traffic_data.py`             | Script to generate traffic data, including benign and attack traffic.      |  
 | `scripts/DDoS-Alarm-2024_11_15_19_30_00.csv`   | Alarm data generated during DDoS testing, summarizing anomalies.           |  
 | `View Results Tree.jmx`                        | JMeter configuration file for traffic simulation.                          |  
-
-
-## 🏗️ Architecture  
-
-### Key Components  
-
-1. **Traffic Simulation**:  
-   - Generated traffic data using JMeter and the `generate_traffic_data.py` script.  
-
-2. **Anomaly Detection**:  
-   - Identifies abnormal traffic patterns via Isolation Forest.  
-
-3. **AWS Integration**:  
-   - Auto Scaling and Load Balancing ensure system resilience.  
-   - CloudWatch monitors and logs all activity, triggering alarms for anomalies.  
 
 
 ## 🤝 Contributing  
