@@ -19,6 +19,29 @@ The system also includes traffic simulation using **Apache JMeter** to create re
 - **Monitoring and Alerts**: Uses AWS CloudWatch for continuous monitoring and alerting.  
 
 
+## 🏗️ Agile Development Process  
+
+This project was developed using the Agile Scrum methodology. Our team divided the work into four focused sprints, each addressing key phases of development, ensuring iterative progress and team collaboration. All tasks and user stories were tracked using **Microsoft Planner**.  
+
+### 🚀 Sprint Overview  
+
+#### **Sprint 1: Project Initialization and AWS Setup**  
+- Set up the **AWS environment**, including **EC2 instances**, **Auto Scaling**, and **Load Balancer** configurations.  
+- Ensured seamless SSH connectivity and system environment preparation.  
+
+#### **Sprint 2: Traffic Simulation and Data Collection**  
+- Configured **Apache JMeter** to simulate real-world traffic, including benign and DDoS attack scenarios.  
+- Generated and logged network traffic data (`traffic-data.csv`) to serve as input for anomaly detection models.  
+
+#### **Sprint 3: Anomaly Detection Implementation**  
+- Developed the **Isolation Forest-based anomaly detection script** (`anomaly_detection.py`) to identify traffic irregularities.  
+- Visualized results by generating **anomalies plot** (`anomalies_plot.png`) to validate the model's effectiveness.  
+
+#### **Sprint 4: Performance Testing and Integration**  
+- Conducted performance tests using JMeter to evaluate system scalability under attack conditions.  
+- Integrated **CloudWatch alarms** for monitoring and configured traffic alerts.  
+
+
 ## 🛠️ Installation  
 
 ### Prerequisites  
@@ -45,6 +68,7 @@ The system also includes traffic simulation using **Apache JMeter** to create re
    ```bash  
    pip install -r requirements.txt  
    ```  
+
 
 ## 🖥️ Usage  
 
