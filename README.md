@@ -44,7 +44,7 @@ This project was developed using the Agile Scrum methodology. Our team divided t
 
 ### Microsoft Planner Screenshot  
 Here’s a snapshot of our **Microsoft Planner Board** showcasing the breakdown of tasks for each sprint:  
-______
+[MS Planner Screenshot](Link)
 
 
 ## 🛠️ Installation  
