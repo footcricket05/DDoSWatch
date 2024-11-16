@@ -2,19 +2,6 @@
 
 A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine learning and cloud infrastructure like **AWS** to detect and mitigate Distributed Denial of Service (DDoS) attacks.  
 
-## 🚀 Table of Contents  
-
-- [Project Overview](#project-overview)  
-- [Features](#features)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [JMeter Configuration](#jmeter-configuration)  
-- [Key Files](#key-files)  
-- [Contributing](#contributing)  
-- [Contributors](#contributors)  
-- [License](#license)  
-- [Acknowledgments](#acknowledgments)  
-
 
 ## 📄 Project Overview  
 
