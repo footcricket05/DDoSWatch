@@ -1,4 +1,8 @@
-# DDoSWatch 🚨🌐
+Here is a review and update of the README based on the listed project files, your work progress, and relevant details:  
+
+---
+
+# DDoSWatch 🚨🌐  
 
 A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine learning and cloud infrastructure like **AWS** to detect and mitigate Distributed Denial of Service (DDoS) attacks.  
 
@@ -9,7 +13,10 @@ A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [JMeter Configuration](#jmeter-configuration)  
+- [Key Files](#key-files)  
 - [Architecture](#architecture)  
+- [Contributing](#contributing)  
+- [Contributors](#contributors)  
 - [License](#license)  
 - [Acknowledgments](#acknowledgments)  
 
@@ -17,19 +24,19 @@ A robust **DDoS Protection System** for cloud-hosted websites, utilizing machine
 
 ## 📄 Project Overview  
 
-DDoSWatch is a **cloud-based DDoS protection system** designed to detect and mitigate attacks in real time. It uses a machine learning-based anomaly detection algorithm (**Isolation Forest**) and integrates with **AWS services** like Auto Scaling, Load Balancing, and CloudWatch to ensure high availability and performance for cloud-hosted websites.  
+DDoSWatch is a **cloud-based DDoS protection system** that uses **Isolation Forest** for anomaly detection and integrates with **AWS services** such as Auto Scaling, Load Balancing, and CloudWatch to detect and mitigate attacks in real time.  
 
-The system includes traffic simulation tools like **Apache JMeter** to create real-world attack scenarios, helping to evaluate the system's effectiveness.  
+The system also includes traffic simulation using **Apache JMeter** to create realistic attack scenarios for evaluating its effectiveness.  
 
 ---
 
 ## 🔧 Features  
 
-- **Anomaly Detection**: Detects abnormal traffic patterns using the Isolation Forest algorithm.  
-- **Real-Time Mitigation**: Leverages AWS Auto Scaling and Load Balancing to minimize the impact of attacks.  
-- **Traffic Simulation**: Uses JMeter to generate attack scenarios and validate system performance.  
-- **Comprehensive Monitoring**: Tracks system metrics and alerts using AWS CloudWatch.  
-- **Customizable Setup**: Allows configuration for different attack and traffic scenarios.  
+- **Anomaly Detection**: Detects abnormal traffic patterns using Isolation Forest.  
+- **Real-Time Mitigation**: Employs AWS Auto Scaling and Load Balancing to mitigate attacks.  
+- **Traffic Simulation**: Simulates network traffic with JMeter to test system performance.  
+- **Scalable Architecture**: Built on AWS to handle traffic spikes during potential DDoS attacks.  
+- **Monitoring and Alerts**: Uses AWS CloudWatch for continuous monitoring and alerting.  
 
 ---
 
@@ -38,14 +45,14 @@ The system includes traffic simulation tools like **Apache JMeter** to create re
 ### Prerequisites  
 
 - Python 3.x  
-- AWS account with necessary IAM permissions.  
+- AWS account with the required permissions (IAM for CloudWatch, EC2, etc.)  
 - Apache JMeter installed for traffic simulation.  
 
 ### Installation Steps  
 
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/footcricket05/DDoSWatch.git  
+   git clone https://github.com/ParthG26/DDoSWatch.git  
    cd DDoSWatch  
    ```  
 
@@ -53,6 +60,11 @@ The system includes traffic simulation tools like **Apache JMeter** to create re
    ```bash  
    python3 -m venv venv  
    source venv/bin/activate  # On Windows: venv\Scripts\activate  
+   ```  
+
+3. Install the required Python dependencies:  
+   ```bash  
+   pip install -r requirements.txt  
    ```  
 
 ---
@@ -63,24 +75,25 @@ Run the following scripts for each function:
 
 ### 1. Anomaly Detection  
 ```bash  
-python anomaly_detection.py  
+python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\anomaly_detection.py"  
 ```  
 
-- **Input**: `traffic-data.csv` containing network traffic data.  
-- **Output**: Identifies anomalies and generates a plot (`anomalies_plot.png`).  
+- **Input**: `traffic-data.csv` located in the `scripts` folder.  
+- **Output**: Anomalies detected and visualized in `anomalies_plot.png` under the `output` folder.  
 
 ### 2. Traffic Data Simulation  
 ```bash  
-python generate_traffic_data.py  
+python "C:\Users\SHAURYA\OneDrive\Desktop\SEM 8 Major Project\DDoSWatch\scripts\generate_traffic_data.py"  
 ```  
 
-- Simulates network traffic data, including benign and attack traffic.  
+- Generates simulated traffic data, saved as `traffic-data.csv` in the `scripts` folder.  
 
 ---
 
 ## 🔧 JMeter Configuration  
 
-JMeter was used to simulate traffic, including potential DDoS scenarios, for testing purposes.  
+**JMeter Test Plan File**:  
+- Path: `"\DDoSWatch\View Results Tree.jmx"`  
 
 ### Configuration Details  
 
@@ -90,23 +103,25 @@ JMeter was used to simulate traffic, including potential DDoS scenarios, for tes
    - Loop count: Continuous traffic simulation.  
 
 2. **HTTP Request Sampler**:  
-   - Targeted a sample endpoint hosted on AWS.  
-   - Configured for a mix of legitimate requests and requests designed to simulate attacks.  
+   - Endpoint: AWS-hosted sample web service.  
+   - Traffic includes a mix of legitimate and attack requests.  
 
 3. **Listeners**:  
-   - **Summary Report**: To capture response times and error rates.  
-   - **Graphs**: For real-time traffic analysis.  
+   - **Summary Report**: Captures key metrics like response times and error rates.  
+   - **Graphs**: For visualizing traffic and attack patterns in real time.  
 
+---
 
-## 📂 Key Files in the Project  
+## 📂 Key Files  
 
-| File Name                     | Description                                                                 |  
-|-------------------------------|-----------------------------------------------------------------------------|  
-| `anomaly_detection.py`        | Detects anomalies in traffic data using Isolation Forest.                  |  
-| `traffic-data.csv`            | Simulated network traffic data for anomaly detection.                      |  
-| `anomalies_plot.png`          | Visual representation of anomalies detected in the traffic data.           |  
-| `generate_traffic_data.py`    | Script to generate traffic data, including benign and attack traffic.      |  
-| `DDoS-Alarm-2024_11_15.csv`   | Log file generated during testing, summarizing DDoS attack alarms.         |  
+| File Path                                       | Description                                                                 |  
+|------------------------------------------------|-----------------------------------------------------------------------------|  
+| `scripts/anomaly_detection.py`                 | Detects anomalies in traffic data using Isolation Forest.                  |  
+| `scripts/traffic-data.csv`                     | Simulated network traffic data for anomaly detection.                      |  
+| `output/anomalies_plot.png`                    | Visual representation of anomalies detected in the traffic data.           |  
+| `scripts/generate_traffic_data.py`             | Script to generate traffic data, including benign and attack traffic.      |  
+| `scripts/DDoS-Alarm-2024_11_15_19_30_00.csv`   | Alarm data generated during DDoS testing, summarizing anomalies.           |  
+| `View Results Tree.jmx`                        | JMeter configuration file for traffic simulation.                          |  
 
 ---
 
@@ -114,31 +129,39 @@ JMeter was used to simulate traffic, including potential DDoS scenarios, for tes
 
 ### Key Components  
 
-1. **Traffic Simulation**  
-   - JMeter-generated traffic includes benign and attack scenarios.  
+1. **Traffic Simulation**:  
+   - Generated traffic data using JMeter and the `generate_traffic_data.py` script.  
 
-2. **Anomaly Detection**  
-   - Python script with the Isolation Forest algorithm detects abnormal traffic patterns.  
+2. **Anomaly Detection**:  
+   - Identifies abnormal traffic patterns via Isolation Forest.  
 
-3. **AWS Integration**  
-   - Auto Scaling ensures resource availability during high traffic.  
-   - CloudWatch monitors and logs traffic metrics, triggering alarms for anomalies.  
-
----
-
-Contributing 🤝
-We welcome contributions from the community! Feel free to fork this repository, create a feature branch, and submit a pull request. Your input is valuable in enhancing the robustness and effectiveness of DDoSWatch.
+3. **AWS Integration**:  
+   - Auto Scaling and Load Balancing ensure system resilience.  
+   - CloudWatch monitors and logs all activity, triggering alarms for anomalies.  
 
 ---
 
-## Contributors 💡  
-We had a strong, dedicated team contributing to the success of this project:  
+## 🤝 Contributing  
 
-- **Shaurya Srinet** (@footcricket05) - Lead Developer, **NS3**, **IoT**, and **AI/ML** Integration  
-- **Charvi Jain** (@charvijain12) - **AI/ML Development**, **Agile Scrum** Developer and Documentation  
-- **Shounak Chandra** (@Shounak2003) - **IoT**, **Agile Scrum** Developer and Documentation 
+We welcome contributions! Please follow these steps:  
+
+1. Fork the repository.  
+2. Create a feature branch (`git checkout -b feature-name`).  
+3. Commit changes (`git commit -m "Add feature"`).  
+4. Push to the branch (`git push origin feature-name`).  
+5. Submit a pull request.  
 
 ---
+
+## 💡 Contributors  
+
+- **Parth Galhotra** (@ParthG26) - Lead Developer  
+- **Shaurya Srinet** - Traffic Simulation and AWS Integration  
+- **Charvi Jain** - Machine Learning Implementation and Documentation  
+- **Shounak Chandra** - IoT and Testing  
+
+---
+
 
 ## License 📄  
 This project is licensed under the `GNU Affero General Public License v3.0`. See the LICENSE file for more details.
@@ -147,6 +170,6 @@ This project is licensed under the `GNU Affero General Public License v3.0`. See
 
 ## 🚨 Acknowledgments  
 
-- Thanks to **AWS** for providing the cloud infrastructure.  
-- Special mention to **JMeter** for enabling realistic traffic simulation.  
-- Credit to the **Isolation Forest** algorithm for anomaly detection.
+- **AWS** for providing the cloud infrastructure.  
+- **Apache JMeter** for enabling realistic traffic simulation.  
+- **Isolation Forest Algorithm** for anomaly detection.  
