@@ -42,6 +42,11 @@ This project was developed using the Agile Scrum methodology. Our team divided t
 - Integrated **CloudWatch alarms** for monitoring and configured traffic alerts.  
 
 
+### Microsoft Planner Screenshot  
+Here’s a snapshot of our **Microsoft Planner Board** showcasing the breakdown of tasks for each sprint:  
+______
+
+
 ## 🛠️ Installation  
 
 ### Prerequisites  
