@@ -126,9 +126,17 @@ JMeter was used to simulate traffic, including potential DDoS scenarios, for tes
 
 ---
 
-## 📄 License  
+## Contributors 💡  
+We had a strong, dedicated team contributing to the success of this project:  
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.  
+- **Shaurya Srinet** (@footcricket05) - Lead Developer, **NS3**, **IoT**, and **AI/ML** Integration  
+- **Charvi Jain** (@charvijain12) - **AI/ML Development**, **Agile Scrum** Developer and Documentation  
+- **Shounak Chandra** (@Shounak2003) - **IoT**, **Agile Scrum** Developer and Documentation 
+
+---
+
+## License 📄  
+This project is licensed under the `GNU Affero General Public License v3.0`. See the LICENSE file for more details.
 
 ---
 
