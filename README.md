@@ -59,7 +59,7 @@ Here’s a snapshot of our **Microsoft Planner Board** showcasing the breakdown 
 
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/ParthG26/DDoSWatch.git  
+   git clone https://github.com/footcricket05/DDoSWatch.git  
    cd DDoSWatch  
    ```  
 
